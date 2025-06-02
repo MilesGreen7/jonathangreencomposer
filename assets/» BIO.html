@@ -1,199 +1,284 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0014)about:internet -->
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" style="--wm-toolbar-height: 67px;"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./» BIO_files/athena.js.download" type="text/javascript"></script>
-<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app217.us.archive.org';v.server_ms=491;archive_analytics.send_pageview({});});</script>
-<script type="text/javascript" src="./» BIO_files/bundle-playback.js.download" charset="utf-8"></script>
-<script type="text/javascript" src="./» BIO_files/wombat.js.download" charset="utf-8"></script>
-<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
-<script type="text/javascript" src="./» BIO_files/ruffle.js.download"></script>
-<script type="text/javascript">
-    __wm.init("https://web.archive.org/web");
-  __wm.wombat("http://jonathangreencomposer.com:80/wordpress/?page_id=2","20110410050455","https://web.archive.org/","web","https://web-static.archive.org/_static/",
-	      "1302411895");
-</script>
-<link rel="stylesheet" type="text/css" href="./» BIO_files/banner-styles.css">
-<link rel="stylesheet" type="text/css" href="./» BIO_files/iconochive.css">
-<!-- End Wayback Rewrite JS Include -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Green - Composer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
+        .container {
+            max-width: 75rem;
+            margin: 0 auto;
+            padding: 0 5%;
+            width: 100%;
+        }
 
-<title>   » BIO</title>
+        /* Header Navigation */
+        .header-nav {
+            padding: 1.25rem 0;
+            border-bottom: 0.0625rem solid #333;
+            flex-shrink: 0;
+        }
 
-<meta name="generator" content="WordPress 2.8.4"> <!-- leave this for stats -->
+        .header-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
 
-<link rel="stylesheet" href="./» BIO_files/style.css" type="text/css" media="screen">
-<link rel="alternate" type="application/rss+xml" title=" RSS Feed" href="https://web.archive.org/web/20110410050455/http://jonathangreencomposer.com/wordpress/?feed=rss2">
-<link rel="pingback" href="http://jonathangreencomposer.com/wordpress/xmlrpc.php">
+        .header-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.875rem;
+            letter-spacing: 0.0625rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
 
+        .header-nav a:hover {
+            color: #ccc;
+        }
 
+        /* Main Content Area */
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            position: relative;
+            min-height: 0;
+        }
 
-<link rel="stylesheet" id="thickbox-css" href="./» BIO_files/thickbox.css" type="text/css" media="all">
-<script type="text/javascript" src="./» BIO_files/jquery.js.download"></script>
-<script type="text/javascript" src="./» BIO_files/AC_RunActiveContent.js.download"></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://jonathangreencomposer.com/wordpress/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://jonathangreencomposer.com/wordpress/wp-includes/wlwmanifest.xml"> 
-<link rel="index" title="" href="http://jonathangreencomposer.com/wordpress">
-<meta name="generator" content="WordPress 2.8.4">
-<script type="text/javascript" src="./» BIO_files/qtobject.js.download"></script>
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3.75rem 0;
+        }
+
+        .content-section {
+            text-align: center;
+            flex: 0 0 auto;
+        }
+
+        .content-section h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            letter-spacing: 0.125rem;
+            text-transform: uppercase;
+            margin-bottom: 1.875rem;
+        }
+
+        .content-section p {
+            font-size: 1rem;
+            color: #ccc;
+            max-width: 37.5rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            position: absolute;
+            right: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 0.3125rem;
+        }
+
+        .contact-section h2 {
+            color: #ff0000;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.3125rem;
+        }
+
+        .contact-section p {
+            font-size: 0.875rem;
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #000;
+            border-top: 0.0625rem solid #333;
+            padding: 0.9375rem 0;
+            flex-shrink: 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: #666;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-left {
+            flex: 0 0 auto;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 0.9375rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            color: #fff;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-right a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer-right a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 64rem) {
+            .contact-section {
+                right: 1.5rem;
+            }
+        }
+
+        @media (max-width: 48rem) {
+            .main-wrapper {
+                flex-direction: column;
+            }
+
+            .contact-section {
+                position: static;
+                transform: none;
+                align-self: center;
+                text-align: center;
+                margin-top: 2.5rem;
+                order: 2;
+            }
+
+            .main-content {
+                order: 1;
+                padding: 2.5rem 0 1.25rem 0;
+            }
+
+            .header-nav ul {
+                flex-direction: column;
+                gap: 1.25rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.625rem;
+            }
+
+            .footer-right {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 30rem) {
+            .header-nav ul {
+                gap: 1rem;
+            }
+
+            .footer-nav {
+                justify-content: center;
+            }
+
+            .footer-right {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
 </head>
-
- 
-<div id="page-top"></div>
-
-<div id="navmenu-bg">
-<div class="nav-container">
-<div id="navmenu">
-			<ul>
-				<!--<li ><a href="http://jonathangreencomposer.com/wordpress/" title="Home">Home</a></li>-->
-				<li class="page_item page-item-24"><a href="» HOME.html" title="HOME">HOME</a></li>
-<li class="page_item page-item-2 current_page_item"><a href="» BIO.html" title="BIO">BIO</a></li>
-<li class="page_item page-item-3"><a href="» MUSIC.html" title="MUSIC">MUSIC</a></li>
-<li class="page_item page-item-7"><a href="» VIDEO.html" title="VIDEO">VIDEO</a></li>
-			</ul>
-</div>
-<div class="header-search">
-<!--<form method="get" id="searchform" action="http://jonathangreencomposer.com/wordpress/">
-<div><input type="text" value="" name="s" id="s" />
-<input type="submit" id="searchsubmit" value="Search" />
-</div>
-</form>
--->
-</div>
-</div>
-</div>
-<div id="page">
-
-
-<div id="header">
-			<div id="headerimgabout">
-								<div class="headerimg-left">
-									<img src="jonathanphoto.png" alt="Photo of Jonathan Green" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
-            <div class="description"></div>
+<body>
+    <!-- Header Navigation -->
+    <nav class="header-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#bio">BIO</a></li>
+                <li><a href="#music">MUSIC</a></li>
+                <li><a href="#video">VIDEO</a></li>
+            </ul>
         </div>
-        <div class="headerimg-right">
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+        <div class="container">
+            <main class="main-content">
+                <div class="content-section">
+                    <h1>BIO</h1>
+                </div>
+            </main>
+
+            <!-- Contact Information -->
+            <aside class="contact-section">
+                <h2>Contact:</h2>
+                <p>Jonathan Green, Composer</p>
+                <p>j.g.green@roadrunner.com</p>
+                <p>818.427.9067</p>
+            </aside>
         </div>
-	</div>
-</div>
+    </div>
 
-	<div id="content" class="narrowcolumn">
-
-		<div class="content-inside">
-	
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tbody><tr>
-    <td class="left">
-    		<div class="post" id="post-2">
-		<h2>BIO</h2>
-			<div class="entry">
-				<p>Jonathan Green is an award-winning composer with credits in film, television, live theater, radio, theme parks, etc.&nbsp; He has composed a wide variety of music for the Universal Studios Theme Parks in Florida, Hollywood, and Japan as well as Coca Cola, Nickelodeon, Animal Planet, Disney, and Dreamworks Animation.</p>
-<p>Jonathan began composing at the age of 9 with his first piece, Rhapsody in G Major.&nbsp; After years of study in classical music, Jonathan began composing and performing music for various rock bands, working the club scene while developing his craft by studying harmony, composition, and counterpoint.&nbsp; In 1990, he moved to Los Angeles where he studied jazz and orchestral composition as well as film scoring at the renowned Grove School of Music.&nbsp; During his studies at Grove, Jonathan became the music director for the ACME Comedy Theater, one of the premiere sketch comedy theaters in the United States.</p>
-<p>Jonathan began composing for television with the hit Dreamworks show, Toonsylvania.&nbsp;&nbsp; He then moved to Universal Studios, composing over 50 different pieces of music for the Universal Studios theme parks.&nbsp; Several film scores followed including Brown Eyed Girl, Malibu Eyes, Heat Chamber, and Finding Lee Mullican.</p>
-<p>His most recent credits include composing the main theme for Go Fact Yourself which airs on NPR affiliates throughout the United States. He also recently scored two video segments for the Above Board Youtube channel. He continues to work in the Los Angeles improv scene, enabling him to work with some of the biggest names in show business, including Jimmy Kimmel, Steve Carell, Jason Alexander, Gary Marshall, Jack Black, Andy Dick, Wayne Brady, Adam Carolla, and Drew Carey with whom Jonathan traveled through Europe providing entertainment for the brave men and women stationed in bases such as Bosnia and Kosovo.</p>
-
-				
-			</div>
-		</div>
-			    
-    
-    
-    </td>
-    <td class="right">
-
-
-<style type="text/css">
-<!--
-#sidebar ul p {
-	font-size: 14px;
-}
-#sidebar ul p {
-	font-size: 24px;
-}
-#sidebar ul p {
-	font-size: 16px;
-}
-#sidebar ul h1 {
-	color: #C00;
-}
--->
-</style>
-
-
-<div id="sidebar">
-<ul>
-  <div align="left"><!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
-<li><h2>Author</h2>
-<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
-</li>
--->
-  </div>
-  <h1>Contact:</h1>
-  <p>Jonathan Green, Composer</p>
-  <p>j.g.green@roadrunner.com</p>
-  <p>818.427.9067</p>
-  <div align="center"></div>
-<!-- END: Constant Contact Bubble Opt-in Email List Form -->
-<!-- BEGIN: SafeSubscribe -->
-<!--<li class="categories"><h2>Categories</h2><ul><li>No categories</li></ul></li><!-- <li id="linkcat-2" class="linkcat"><h2>Blogroll</h2>
-	<ul class='xoxo blogroll'>
-<li><a href="http://wordpress.org/development/">Development Blog</a></li>
-<li><a href="http://codex.wordpress.org/">Documentation</a></li>
-<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-<li><a href="http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
-<li><a href="http://wordpress.org/support/">Support Forum</a></li>
-<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
-
-	</ul>
-</li>
-<li><h2>Meta</h2>
-<ul>
-<li><a href="http://jonathangreencomposer.com/wordpress/wp-login.php">Log in</a></li>
-<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
-<li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="This document validates as CSS level 2.1">Valid <abbr title="Cascading Style Sheets Level 2 Revision 1">CSS 2.1</abbr></a></li>
-<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
-<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
--->
-  <p></p>
-</ul>
- </div>
-
-
-</td>
-  </tr>
-</tbody></table>
-
-	
-	
-
-
-
-</div>
-        
-        
-        
-        
-        
-	</div>
-
-
-<div id="footer">
-  <div id="footernavmenu">
-    <ul>
-      <li><a href="» HOME.html" title="Home"></a></li>
-      <li class="page_item page-item-24"><a href="» HOME.html" title="HOME">HOME</a></li>
-<li class="page_item page-item-2 current_page_item"><a href="» BIO.html" title="BIO">BIO</a></li>
-<li class="page_item page-item-3"><a href="» MUSIC.html" title="MUSIC">MUSIC</a></li>
-<li class="page_item page-item-7"><a href="» VIDEO.html" title="VIDEO">VIDEO</a></li>
-    </ul>
-  </div>
-  <div class="copyright">
-    <p> Designed by <a href="https://web.archive.org/web/20110410050455/http://www.vondada.com/" title="Web Design Company" target="_blank">Von Dada Artwerks </a> <br>
-      <a href="https://web.archive.org/web/20110410050455/http://jonathangreencomposer.com/wordpress/?feed=rss2">Entries (RSS)</a> and <a href="https://web.archive.org/web/20110410050455/http://jonathangreencomposer.com/wordpress/?feed=comments-rss2">Comments (RSS)</a>.
-      <!-- 11 queries. 0.316 seconds. -->
-    </p>
-  </div>
-</div>
-<script type="text/javascript" src="./» BIO_files/thickbox.js.download"></script>
-
-
-</div></body></html>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <ul class="footer-nav">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#bio">bio</a></li>
+                        <li><a href="#music">music</a></li>
+                        <li><a href="#video">video</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <span>Designed by Von Dada Artworks</span>
+                    <a href="#entries">Entries (RSS)</a>
+                    <span>and</span>
+                    <a href="#comments">Comments (RSS)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

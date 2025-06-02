@@ -67,14 +67,15 @@
         .main-content {
             flex: 1;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             padding: 3.75rem 0;
         }
 
         .content-section {
-            text-align: center;
+            text-align: left;
             flex: 0 0 auto;
+            max-width: 50rem;
         }
 
         .content-section h1 {
@@ -83,12 +84,14 @@
             letter-spacing: 0.125rem;
             text-transform: uppercase;
             margin-bottom: 1.875rem;
+            text-align: center;
         }
 
         .content-section p {
             font-size: 1rem;
             color: #ccc;
-            max-width: 37.5rem;
+            margin-bottom: 1.25rem;
+            text-align: justify;
         }
 
         /* Contact Section */
@@ -209,6 +212,14 @@
             .footer-right {
                 justify-content: center;
             }
+
+            .content-section {
+                text-align: center;
+            }
+
+            .content-section p {
+                text-align: left;
+            }
         }
 
         @media (max-width: 30rem) {
@@ -246,6 +257,10 @@
             <main class="main-content">
                 <div class="content-section">
                     <h1>BIO</h1>
+                    <p>Jonathan Green is an award-winning composer with credits in film, television, live theater, radio, theme parks, etc. He has composed a wide variety of music for the Universal Studios Theme Parks in Florida, Hollywood, and Japan as well as Coca Cola, Nickelodeon, Animal Planet, Disney, and Dreamworks Animation.</p>
+                    <p>Jonathan began composing at the age of 9 with his first piece, Rhapsody in G Major. After years of study in classical music, Jonathan began composing and performing music for various rock bands, working the club scene while developing his craft by studying harmony, composition, and counterpoint. In 1990, he moved to Los Angeles where he studied jazz and orchestral composition as well as film scoring at the renowned Grove School of Music. During his studies at Grove, Jonathan became the music director for the ACME Comedy Theater, one of the premiere sketch comedy theaters in the United States.</p>
+                    <p>Jonathan began composing for television with the hit Dreamworks show, Toonsylvania. He then moved to Universal Studios, composing over 50 different pieces of music for the Universal Studios theme parks. Several film scores followed including Brown Eyed Girl, Malibu Eyes, Heat Chamber, and Finding Lee Mullican.</p>
+                    <p>His most recent credits include composing the main theme for Go Fact Yourself which airs on NPR affiliates throughout the United States. He also recently scored two video segments for the Above Board Youtube channel. He continues to work in the Los Angeles improv scene, enabling him to work with some of the biggest names in show business, including Jimmy Kimmel, Steve Carell, Jason Alexander, Gary Marshall, Jack Black, Andy Dick, Wayne Brady, Adam Carolla, and Drew Carey with whom Jonathan traveled through Europe providing entertainment for the brave men and women stationed in bases such as Bosnia and Kosovo.</p>
                 </div>
             </main>
 
@@ -270,12 +285,6 @@
                         <li><a href="#music">music</a></li>
                         <li><a href="#video">video</a></li>
                     </ul>
-                </div>
-                <div class="footer-right">
-                    <span>Designed by Von Dada Artworks</span>
-                    <a href="#entries">Entries (RSS)</a>
-                    <span>and</span>
-                    <a href="#comments">Comments (RSS)</a>
                 </div>
             </div>
         </div>

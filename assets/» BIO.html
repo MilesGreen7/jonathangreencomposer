@@ -70,12 +70,15 @@
             align-items: flex-start;
             justify-content: center;
             padding: 3.75rem 0;
+            padding-right: 200px;
         }
 
         .content-section {
             text-align: left;
             flex: 0 0 auto;
             max-width: 50rem;
+            width: 100%;
+            padding: 0 1rem;
         }
 
         .content-section h1 {
@@ -98,8 +101,7 @@
         .contact-section {
             position: absolute;
             right: 2.5rem;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 120px;
             display: flex;
             flex-direction: column;
             gap: 0.3125rem;
@@ -177,6 +179,10 @@
             .contact-section {
                 right: 1.5rem;
             }
+            
+            .main-content {
+                padding-right: 180px;
+            }
         }
 
         @media (max-width: 48rem) {
@@ -196,6 +202,7 @@
             .main-content {
                 order: 1;
                 padding: 2.5rem 0 1.25rem 0;
+                padding-right: 0;
             }
 
             .header-nav ul {
@@ -215,10 +222,16 @@
 
             .content-section {
                 text-align: center;
+                padding: 0 0.5rem;
             }
 
             .content-section p {
                 text-align: left;
+                font-size: 0.9rem;
+            }
+
+            .content-section h1 {
+                font-size: 1.3rem;
             }
         }
 
@@ -235,6 +248,19 @@
                 flex-direction: column;
                 gap: 0.5rem;
             }
+
+            .content-section {
+                padding: 0 0.25rem;
+            }
+
+            .content-section p {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            .content-section h1 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -243,8 +269,8 @@
     <nav class="header-nav">
         <div class="container">
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#bio">BIO</a></li>
+                <li><a href="» HOME.html">HOME</a></li>
+                <li><a href="» BIO.html">BIO</a></li>
                 <li><a href="#music">MUSIC</a></li>
                 <li><a href="#video">VIDEO</a></li>
             </ul>
@@ -280,8 +306,8 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <ul class="footer-nav">
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#bio">bio</a></li>
+                        <li><a href="» HOME.html">home</a></li>
+                        <li><a href="» BIO.html">bio</a></li>
                         <li><a href="#music">music</a></li>
                         <li><a href="#video">video</a></li>
                     </ul>
